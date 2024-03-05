@@ -7,7 +7,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<%
+	pageContext.setAttribute("result", "hello");
+	
+%>
 <body>
-	<%=request.getAttribute("result") %> 입니다. 
+	${requestScope.result}<br>
+	${result}
 </body>
 </html>
