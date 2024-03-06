@@ -9,10 +9,13 @@
 </head>
 <%
 	pageContext.setAttribute("result", "hello");
-	
 %>
 <body>
 	${requestScope.result}<br>
-	${result}
+	${result}<br>
+	<!-- String num_=  request.getParameter("n");  -->
+	${param.n}<br>
+	<!-- header:   -->
+	${header.accept}
 </body>
 </html>
